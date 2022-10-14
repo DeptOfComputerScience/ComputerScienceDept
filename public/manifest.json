@@ -1,19 +1,19 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "CS Dept || GU",
+  "name": "CS Dept website of Gauhati University",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "GU.png",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
+      "src": "GU.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "logo512.png",
+      "src": "GU.png",
       "type": "image/png",
       "sizes": "512x512"
     }
