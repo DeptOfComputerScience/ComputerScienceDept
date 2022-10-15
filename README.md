@@ -21,6 +21,10 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 
+### CSS Framework
+
+This project uses Tailwind Css and everything is configured so you can just carry on with your jsx files and add the tailwind classes there. For reference go [here](https://tailwindcss.com/docs)
+
 ### TODO:
 1. Create the Pages
 2. Setup the Navabar and Footer
