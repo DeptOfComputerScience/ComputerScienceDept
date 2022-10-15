@@ -69,21 +69,21 @@ function classNames(...classes) {
 
 export default function Example() {
   return (
-    <Popover className="relative bg-white">
+    <Popover className="relative bg-primary">
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <div className="flex items-center justify-between border-b-2 border-gray-100 py-4 md:justify-start md:space-x-10">
           <div className="flex justify-start lg:w-0 lg:flex-1">
             <a href='/'>
               <span className="sr-only">CS Department</span>
               <img
-                className="h-4 w-auto sm:h-10"
+                className="h-4 w-auto sm:h-8"
                 src={GU}
                 alt=""
               />
             </a>
           </div>
           <div className="-my-2 -mr-2 md:hidden">
-            <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+            <Popover.Button className="inline-flex items-center justify-center rounded-md bg-primary p-2 text-gray-400 hover:bg-primary-light hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
               <span className="sr-only">Open menu</span>
               <Bars3Icon className="h-6 w-6" aria-hidden="true" />
             </Popover.Button>
@@ -96,7 +96,7 @@ export default function Example() {
                   <Popover.Button
                     className={classNames(
                       open ? 'text-gray-900' : 'text-gray-500',
-                      'group inline-flex items-center rounded-md bg-white text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2'
+                      'group inline-flex items-center rounded-md bg-primary text-base font-medium hover:text-gray-900 hover:bg-primary-light focus:outline-none focus:ring-2 focus:ring-primary-dark focus:ring-offset-2'
                     )}
                   >
                     <span>Academics</span>
@@ -120,14 +120,14 @@ export default function Example() {
                   >
                     <Popover.Panel className="absolute z-10 -ml-4 mt-3 w-screen max-w-md transform px-2 sm:px-0 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2">
                       <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
-                        <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
+                      <div className="relative grid gap-6 bg-primary px-5 py-6 sm:gap-8 sm:p-8">
                           {academics.map((item) => (
                             <a
                               key={item.name}
                               href={item.href}
-                              className="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50"
+                              className="-m-3 flex items-start rounded-lg p-3 hover:bg-primary-light"
                             >
-                              <item.icon className="h-6 w-6 flex-shrink-0 text-indigo-600" aria-hidden="true" />
+                              <item.icon className="h-6 w-6 flex-shrink-0 text-primary-dark" aria-hidden="true" />
                               <div className="ml-4">
                                 <p className="text-base font-medium text-gray-900">{item.name}</p>
                                 <p className="mt-1 text-sm text-gray-500">{item.description}</p>
@@ -155,7 +155,7 @@ export default function Example() {
                   <Popover.Button
                     className={classNames(
                       open ? 'text-gray-900' : 'text-gray-500',
-                      'group inline-flex items-center rounded-md bg-white text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2'
+                      'group inline-flex items-center rounded-md bg-primary text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-primary-dark focus:ring-offset-2'
                     )}
                   >
                     <span>Events</span>
@@ -178,15 +178,15 @@ export default function Example() {
                     leaveTo="opacity-0 translate-y-1"
                   >
                     <Popover.Panel className="absolute left-1/2 z-10 mt-3 w-screen max-w-md -translate-x-1/2 transform px-2 sm:px-0">
-                      <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
-                        <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
+                    <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-primary-dark ring-opacity-5">
+                    <div className="relative grid gap-6 bg-primary px-5 py-6 sm:gap-8 sm:p-8">
                           {events.map((item) => (
                             <a
                               key={item.name}
                               href={item.href}
-                              className="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50"
+                              className="-m-3 flex items-start rounded-lg p-3 hover:bg-primary-light"
                             >
-                              <item.icon className="h-6 w-6 flex-shrink-0 text-indigo-600" aria-hidden="true" />
+                              <item.icon className="h-6 w-6 flex-shrink-0 text-primary-dark" aria-hidden="true" />
                               <div className="ml-4">
                                 <p className="text-base font-medium text-gray-900">{item.name}</p>
                                 <p className="mt-1 text-sm text-gray-500">{item.description}</p>
@@ -207,7 +207,7 @@ export default function Example() {
                   <Popover.Button
                     className={classNames(
                       open ? 'text-gray-900' : 'text-gray-500',
-                      'group inline-flex items-center rounded-md bg-white text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2'
+                      'group inline-flex items-center rounded-md bg-primary text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-primary-dark focus:ring-offset-2'
                     )}
                   >
                     <span>More</span>
@@ -230,15 +230,15 @@ export default function Example() {
                     leaveTo="opacity-0 translate-y-1"
                   >
                     <Popover.Panel className="absolute left-1/2 z-10 mt-3 w-screen max-w-md -translate-x-1/2 transform px-2 sm:px-0">
-                      <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
-                        <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
+                    <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-primary-dark ring-opacity-5">
+                    <div className="relative grid gap-6 bg-primary px-5 py-6 sm:gap-8 sm:p-8">
                           {resources.map((item) => (
                             <a
                               key={item.name}
                               href={item.href}
-                              className="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50"
+                              className="-m-3 flex items-start rounded-lg p-3 hover:bg-primary-light"
                             >
-                              <item.icon className="h-6 w-6 flex-shrink-0 text-indigo-600" aria-hidden="true" />
+                              <item.icon className="h-6 w-6 flex-shrink-0 text-primary-dark" aria-hidden="true" />
                               <div className="ml-4">
                                 <p className="text-base font-medium text-gray-900">{item.name}</p>
                                 <p className="mt-1 text-sm text-gray-500">{item.description}</p>
@@ -259,7 +259,7 @@ export default function Example() {
             </a>
             <a
               href="/"
-              className="ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700"
+              className="ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-primary px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700"
             >
               Sign up
             </a>
@@ -277,18 +277,18 @@ export default function Example() {
         leaveTo="opacity-0 scale-95"
       >
         <Popover.Panel focus className="absolute inset-x-0 top-0 origin-top-right transform p-2 transition md:hidden">
-          <div className="divide-y-2 divide-gray-50 rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5">
+        <div className="divide-y-2 divide-gray-50 rounded-lg bg-primary shadow-lg ring-1 ring-black ring-opacity-5">
             <div className="px-5 pt-5 pb-6">
               <div className="flex items-center justify-between">
                 <div>
                   <img
                     className="h-8 w-auto"
-                    src="GU.png"
+                    src={GU}
                     alt="..."
                   />
                 </div>
                 <div className="-mr-2">
-                  <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                <Popover.Button className="inline-flex items-center justify-center rounded-md bg-primary p-2 text-gray-400 hover:bg-primart-light hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
                     <span className="sr-only">Close menu</span>
                     <XMarkIcon className="h-6 w-6" aria-hidden="true" />
                   </Popover.Button>
@@ -300,9 +300,9 @@ export default function Example() {
                     <a
                       key={item.name}
                       href={item.href}
-                      className="-m-3 flex items-center rounded-md p-3 hover:bg-gray-50"
+                      className="-m-3 flex items-center rounded-md p-3 hover:bg-primary-light"
                     >
-                      <item.icon className="h-6 w-6 flex-shrink-0 text-indigo-600" aria-hidden="true" />
+                      <item.icon className="h-6 w-6 flex-shrink-0 text-primary-dark" aria-hidden="true" />
                       <span className="ml-3 text-base font-medium text-gray-900">{item.name}</span>
                     </a>
                   ))}
@@ -337,7 +337,7 @@ export default function Example() {
                   </a>
                 ))}
               </div>
-              <div>
+              {/* <div>
                 <a
                   href="/"
                   className="flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700"
@@ -350,7 +350,7 @@ export default function Example() {
                     Sign in
                   </a>
                 </p>
-              </div>
+              </div> */}
             </div>
           </div>
         </Popover.Panel>
