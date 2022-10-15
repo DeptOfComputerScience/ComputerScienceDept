@@ -12,7 +12,7 @@ import {
   XMarkIcon,
 } from '@heroicons/react/24/outline'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
-import GU from '../assets/GU.png';
+import GU from '../assets/GU-logo.png';
 
 const page = [
   { id: "1", title: "Alumni", route: "/alumni" },
@@ -70,13 +70,13 @@ function classNames(...classes) {
 export default function Example() {
   return (
     <Popover className="relative bg-primary">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6">
+      <div className="mx-auto max-w-10xl px-4 sm:px-6">
         <div className="flex items-center justify-between border-b-2 border-gray-100 py-4 md:justify-start md:space-x-10">
           <div className="flex justify-start lg:w-0 lg:flex-1">
             <a href='/'>
               <span className="sr-only">CS Department</span>
               <img
-                className="h-4 w-auto sm:h-8"
+                className="h-6 w-auto sm:h-10"
                 src={GU}
                 alt=""
               />
@@ -282,7 +282,7 @@ export default function Example() {
               <div className="flex items-center justify-between">
                 <div>
                   <img
-                    className="h-8 w-auto"
+                    className="h-10 w-auto"
                     src={GU}
                     alt="..."
                   />
