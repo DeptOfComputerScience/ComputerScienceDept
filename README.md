@@ -25,6 +25,16 @@ The page will reload when you make changes.\
 
 This project uses Tailwind Css and everything is configured so you can just carry on with your jsx files and add the tailwind classes there. For reference go [here](https://tailwindcss.com/docs)
 
+### Rules:
+1. Don't add your own colors, follow the config file: `primary` for **primary color**, `secondary` for **secondary color** and there are others like `accent`, `whites`, `blacks`, `greys`.
+2. Don't ever push to main. Always work on your own branch and then create a pull request to merge onto #main.
+
 ### TODO:
-1. Create the Pages
+1. ~Create the Pages~
+2. ~Setup tailwind config~
 2. Setup the Navabar and Footer
+3. Setup About and Contact Us Pages
+4. Setup Gallery, forms, notification components
+5. Create the academic pages
+6. Create the Event pages
+7. Deciding on the backend services
