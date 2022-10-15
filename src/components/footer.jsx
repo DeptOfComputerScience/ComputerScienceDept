@@ -3,11 +3,11 @@ import React from "react";
 const Footer = () => {
     return(
       
-      <footer class="p-4 bg-white sm:p-6 bg-purple-900">
+      <footer class="p-4 bg-primary sm:p-6">
           <div class="md:flex md:justify-between">
               <div class="mb-6 md:mb-0">
                   <a href="/" class="flex items-center">
-                      <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">CS DEPT</span>
+                      <span class="self-center text-2xl uppercase font-semibold whitespace-nowrap dark:text-white">Computer Science Department</span>
                   </a>
               </div>
               <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
